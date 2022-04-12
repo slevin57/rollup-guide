@@ -10,3 +10,4 @@
 const str = 'Module1';
 
 export { str as default };
+/* follow me on Twitter!Version is 1.0.0 */
