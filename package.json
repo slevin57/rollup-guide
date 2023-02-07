@@ -1,0 +1,19 @@
+{
+    "name": "rollup-guide",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "set-env1": "rollup --config ./set-env/env1.rollup.config.js --environment production,uat:false,version:100",
+        "set-env2": "NODE_ENV=production rollup -c ./set-env/env2.rollup.config.js -e",
+        "output-banner": "rollup -c ./output.banner/rollup.config.js",
+        "output-footer": "rollup -c ./output.footer/rollup.config.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "rollup": "^2.70.1"
+    }
+}
